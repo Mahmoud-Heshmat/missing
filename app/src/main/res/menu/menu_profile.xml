@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/editt"
+        android:title="@string/profile"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/close"
+        android:icon="@drawable/cancel"
+        android:title="@string/profile"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/done"
+        android:title="@string/profile"
+        app:showAsAction="always"/>
+
+
+</menu>

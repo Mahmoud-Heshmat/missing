@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Menus -->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeDrawer"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/Add"
+            android:icon="@drawable/add2"
+            android:title="@string/add_photo" />
+
+
+    </group>
+
+    <!--  Sub Menus  -->
+    <item android:title="@string/others">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/language"
+                    android:icon="@drawable/language"
+                    android:title="@string/language"/>
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="@string/logout"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

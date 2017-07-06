@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="android.support.multidex.MultiDexApplication"
+    package="com.example.mahmoudheshmat.missing"
+    android:configChanges="locale|orientation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <provider
+        android:name="com.facebook.NativeAppCallContentProvider"
+        android:authorities="com.facebook.app.NativeAppCallContentProvider1036705886358393"
+        android:exported="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activites.splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activites.login" />
+        <activity android:name=".Activites.Registration" />
+        <activity
+            android:name=".Activites.Home"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Activites.childData" />
+        <activity android:name=".Activites.FaceRecognition" />
+        <activity android:name=".Activites.identifiedimages" />
+        <activity android:name=".Activites.childDetailed" />
+
+        <receiver android:name=".NotificationReciver">
+            <intent-filter>
+                <action android:name="Broadcast" />
+                <action android:name="ACCEPT" />
+                <action android:name="CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activites.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activites.userHelper" />
+        <activity
+            android:name=".Activites.profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Activites.Home"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mahmoudheshmat.missing.Activites.Home" />
+        </activity>
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activites.chat_room" />
+        <activity android:name=".Activites.chat_message" />
+        <activity android:name=".Activites.MainActivity" />
+        <activity android:name=".Activites.Notification_Details" />
+        <activity android:name=".notify" />
+        <activity android:name=".Activites.missingDetails" />
+        <activity android:name=".Activites.FaceRecogintioned"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mahmoudheshmat.missing.Activites.MapsActivity"
+        android:layout_weight="1">
+    </fragment>
+
+    <Button
+        android:text="@string/connect_with_your_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="connect"
+        android:background="@drawable/angel"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/move"/>
+
+</LinearLayout>
+
+
+

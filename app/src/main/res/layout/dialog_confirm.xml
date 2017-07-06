@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        android:hint="@string/enter_the_code_received"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextOtp"
+        android:textColorHint="@color/move"
+        android:background="@drawable/angel"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonConfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circliangeleft"
+            android:backgroundTint="@color/move"
+            android:padding="12dp"
+            android:text="@string/confirm"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonSendagain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circleangel"
+            android:padding="12dp"
+            android:text="@string/send_again"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:textColor="@color/move" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

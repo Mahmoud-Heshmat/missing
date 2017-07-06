@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="@string/please_choose_the_language_of_app"
+            android:textSize="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:text="@string/arabic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/arabic"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/circliangeleft"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:text="@string/english"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/english"
+            android:background="@drawable/circliangeleft"
+            android:backgroundTint="@color/move"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

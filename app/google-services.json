@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "353170946362",
+    "firebase_url": "https://find-missing.firebaseio.com",
+    "project_id": "find-missing",
+    "storage_bucket": "find-missing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353170946362:android:411b43a7f034cad7",
+        "android_client_info": {
+          "package_name": "com.example.mahmoudheshmat.missing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353170946362-1546onk6o13pndg3c2dkcuh79nfmc5p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPzXP-HegLfznMw_lSR1krZ1mRaFFzo_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

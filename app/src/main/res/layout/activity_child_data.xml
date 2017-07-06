@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_child_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoudheshmat.missing.Activites.childData">
+
+    <include
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/missingImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape2"
+                android:layout_margin="@dimen/dim8">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/childName"
+                    android:gravity="center"
+                    android:padding="@dimen/dim10"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/missingName" />
+
+
+                <TextView
+                    android:id="@+id/missingAge"
+                    android:text="@string/childAge"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+
+                <TextView
+                    android:id="@+id/missingSkin"
+                    android:text="@string/childskin"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+
+                <TextView
+                    android:id="@+id/missingHair"
+                    android:text="@string/childhair"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+
+                <TextView
+                    android:id="@+id/missingEye"
+                    android:text="@string/childEyeColor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+                <TextView
+                    android:id="@+id/missingLength"
+                    android:text="@string/childLength"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+
+                <TextView
+                    android:id="@+id/missingLost"
+                    android:text="@string/lostDate"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim20" />
+
+
+                <Button
+                    android:id="@+id/btnChildData"
+                    android:text="@string/Buttonsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circliangeleft"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="38dp"
+                    android:textSize="@dimen/dim20"
+                    android:onClick="btnSave" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

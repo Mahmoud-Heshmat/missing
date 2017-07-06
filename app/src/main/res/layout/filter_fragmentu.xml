@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <include
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_view2"
+        android:layout_gravity="top|center"
+        android:elevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/White"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/secondLinear"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/address"
+                    android:textSize="28dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/move"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/cityRadio"
+                    android:layout_margin="@dimen/dim15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/cairoAddress"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/cairo"
+                        android:buttonTint="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/alexAddress"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alexandria"
+                        android:buttonTint="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/faiyumAddress"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:text="@string/faiyum"
+                        android:buttonTint="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/gizaAddress"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:text="@string/giza"
+                        android:buttonTint="@color/white"/>
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dim15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_button"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dim25"
+            android:layout_marginRight="@dimen/dim25"
+            android:textSize="@dimen/dim20"
+            android:background="@drawable/circliangeleft" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
