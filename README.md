@@ -1,7 +1,7 @@
 # missing
 Missing App
 
-![screenshot_2017-06-29-00-03-12](https://user-images.githubusercontent.com/24946909/27937744-a7bb3440-62b9-11e7-909f-eb1835e8b12e.png)
+<img src="https://user-images.githubusercontent.com/24946909/27937744-a7bb3440-62b9-11e7-909f-eb1835e8b12e.png" width="360" height="640">
 
 ![screenshot_2017-06-29-00-41-55](https://user-images.githubusercontent.com/24946909/27937748-b029dd84-62b9-11e7-9412-3ebd413e78b7.png)
 
