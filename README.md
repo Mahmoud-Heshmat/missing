@@ -1,4 +1,4 @@
-# missing App
+## Missing App
 
 ## Description
 Parents could find their lost child by uploading his photo, then the app makes face recognition for this photo and compares it with the photos on the server. If there's a match, parent is notified and can interact (chat) with the photo uploader (the one who found the child)
